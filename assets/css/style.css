@@ -1,3 +1,6 @@
+
+
+/* Navbar */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
@@ -7,11 +10,12 @@
 }
 body {
   min-height: 100vh;
-  background: url("/assets/img/background.jpg") no-repeat;
+  background: url(/assets/img/background.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 .header {
+
   position: fixed;
   top: 0;
   left: 0;
@@ -51,6 +55,7 @@ body {
   cursor: default;
 }
 .navbar a {
+  
   color: #fff;
   font-size: 18px;
   text-decoration: none;
@@ -109,10 +114,14 @@ body {
 
 /* songul css */ 
 /* Import Google font - Poppins */
+
 .wrapper{
+
   display: flex;
-  max-width: 1200px;
+  width: 100%;
+  height: 50%;
   position: relative;
+  
 }
 .wrapper i{
   top: 50%;
@@ -141,8 +150,10 @@ body {
 }
 .wrapper i:last-child{
   right: -22px;
+  
 }
 .wrapper .carousel{
+  
   font-size: 0px;
   cursor: pointer;
   overflow: hidden;
@@ -157,6 +168,7 @@ body {
   pointer-events: none;
 }
 .carousel img{
+  border-radius: 1.618rem;
   height: 340px;
   object-fit: cover;
   user-select: none;
