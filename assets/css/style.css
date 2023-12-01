@@ -294,7 +294,6 @@ body {
 .header .language-select li {
   display: block;
   vertical-align: middle;
-  text-align: left;
   flex-direction: column;
   justify-content: left;
   order: 2;
@@ -318,5 +317,3 @@ body {
   order: 1;
   pointer-events: none;
 }
-/* Contact */ 
-
