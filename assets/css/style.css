@@ -161,7 +161,8 @@ body {
 
 .wrapper{
   
-  padding: 0 35px;
+  border-radius: 5rem;
+  padding: 0 50px;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
@@ -172,6 +173,7 @@ body {
   
 }
 .wrapper i{
+
   top: 50%;
   height: 44px;
   width: 44px;
