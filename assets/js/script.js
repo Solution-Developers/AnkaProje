@@ -68,3 +68,26 @@ document.addEventListener("mousemove", dragging);
 carousel.addEventListener("touchmove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
+
+
+//language
+function initLanguageSelect(){
+    const languageSelect = document.querySelector(".language-select");
+    languageSelect.addEventListener("click",function(){
+        this.classList.toggle("open");
+    });
+    languageSelect.querySelectorAll("li").forEach(function(li){
+        li.addEventListener("click",function(){
+            li.parentNode.querySelectorAll("li").forEach(function(li){
+                li.classList.remove("active");
+            });
+            this.classList.add("active");
+
+            const lang = this.getAttribute("data-lang");
+            document.querySelector("html").lang = lang;
+        });
+    });
+}
+document.addEventListener("DOMContentLoaded",initLanguageSelect);
+
+
