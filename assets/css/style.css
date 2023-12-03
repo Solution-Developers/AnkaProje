@@ -111,6 +111,10 @@ body {
   left: 100%;
 }
 
+.footer.icons{
+ text-align: center;
+}
+
 
 
 
@@ -192,24 +196,25 @@ body {
   transform: translateY(-50%) scale(0.9);
 }
 .wrapper i:hover{
-  background: #f2f2f2;
+  background: #f00;
 }
 .wrapper i:first-child{
-  left: -22px;
+  left: -0px;
   display: none;
 }
 .wrapper i:last-child{
-  right: -22px;
+  right: -0px;
   
 }
 .wrapper .carousel{
-  
+  border-radius: 1.8rem;
   font-size: 0px;
   cursor: pointer;
   overflow: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
 }
+
 .carousel.dragging{
   cursor: grab;
   scroll-behavior: auto;
@@ -219,12 +224,13 @@ body {
 }
 .carousel img{
   border-radius: 1.618rem;
-  height: 340px;
+  height: 363.2px;
   object-fit: cover;
   user-select: none;
   margin-left: 14px;
   width: calc(100% / 3);
 }
+
 .carousel img:first-child{
   margin-left: 0px;
 }
