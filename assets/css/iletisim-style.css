@@ -391,9 +391,84 @@ input:focus, textarea:focus, keygen:focus, select:focus {
       }
     }
 
-  
+
+    /* Whatsapp Button*/
+.whatsapp-btn-container{
+  position: fixed;
+  right: 10px;
+  opacity: 1;
+  bottom: 90px;
+  padding: 24px;
+}
+.whatsapp-btn{
+  font-size: 60px;
+  color: #25d366;
+  display: inline-block;
+  transition: all 400ms;
+}
+.whatsapp-btn-container .whatsapp-btn:hover{
+  transform: scale(1.2);
+}
+.whatsapp-btn-container span{
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-family: "Roboto",sans-serif;
+  font-weight: bold;
+  color: #099584;
+  transform: rotateZ(20deg) translateX(10px);
+  opacity: 0;
+  transition: all 400ms;
+}
+.whatsapp-btn-container .whatsapp-btn:hover + span{
+  transform: rotateZ(0deg) translateX(0px);
+  opacity: 1;
+}
 
 
-   
-	
-	
+/* Languages */
+.header .language-select:hover {
+  color: #f00;
+}
+
+.header .language-select {
+  display: inline-flex;
+  flex-direction: column;
+  color: #fff;
+  height: 49px;
+  overflow: hidden;
+  cursor: pointer;
+  border: #464646;
+  border-radius: 4px;
+  font-size: 18px;
+  text-decoration: none;
+  margin-left: 35px;
+  transition: 0.3s;
+}
+
+.header .language-select li {
+  display: block;
+  vertical-align: middle;
+  flex-direction: column;
+  justify-content: left;
+  order: 2;
+  min-height: 49px;
+}
+
+.header .language-select li:hover {
+  cursor: pointer;
+}
+
+.header .language-select li span {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.header .language-select .open {
+  height: 148px;
+}
+
+.header .language-select li.active {
+  order: 1;
+  pointer-events: none;
+}

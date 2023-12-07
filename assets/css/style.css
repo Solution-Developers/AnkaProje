@@ -111,6 +111,10 @@ body {
   left: 100%;
 }
 
+.footer.icons{
+ text-align: center;
+}
+
 
 
 
@@ -161,7 +165,8 @@ body {
 
 .wrapper{
   
-  padding: 0 35px;
+  border-radius: 5rem;
+  padding: 0 50px;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
@@ -172,6 +177,7 @@ body {
   
 }
 .wrapper i{
+
   top: 50%;
   height: 44px;
   width: 44px;
@@ -190,24 +196,25 @@ body {
   transform: translateY(-50%) scale(0.9);
 }
 .wrapper i:hover{
-  background: #f2f2f2;
+  background: #f00;
 }
 .wrapper i:first-child{
-  left: -22px;
+  left: -0px;
   display: none;
 }
 .wrapper i:last-child{
-  right: -22px;
+  right: -0px;
   
 }
 .wrapper .carousel{
-  
+  border-radius: 1.8rem;
   font-size: 0px;
   cursor: pointer;
   overflow: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
 }
+
 .carousel.dragging{
   cursor: grab;
   scroll-behavior: auto;
@@ -217,12 +224,13 @@ body {
 }
 .carousel img{
   border-radius: 1.618rem;
-  height: 340px;
+  height: 363.2px;
   object-fit: cover;
   user-select: none;
   margin-left: 14px;
   width: calc(100% / 3);
 }
+
 .carousel img:first-child{
   margin-left: 0px;
 }
@@ -237,7 +245,83 @@ body {
   }
 }
 
+/* Whatsapp Button*/
+.whatsapp-btn-container{
+  position: fixed;
+  right: 10px;
+  opacity: 1;
+  bottom: 90px;
+  padding: 24px;
+}
+.whatsapp-btn{
+  font-size: 60px;
+  color: #25d366;
+  display: inline-block;
+  transition: all 400ms;
+}
+.whatsapp-btn-container .whatsapp-btn:hover{
+  transform: scale(1.2);
+}
+.whatsapp-btn-container span{
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-family: "Roboto",sans-serif;
+  font-weight: bold;
+  color: #099584;
+  transform: rotateZ(20deg) translateX(10px);
+  opacity: 0;
+  transition: all 400ms;
+}
+.whatsapp-btn-container .whatsapp-btn:hover + span{
+  transform: rotateZ(0deg) translateX(0px);
+  opacity: 1;
+}
 
 
+/* Languages */
+.header .language-select:hover {
+  color: #f00;
+}
 
-/* Contact */ 
+.header .language-select {
+  display: inline-flex;
+  flex-direction: column;
+  color: #fff;
+  height: 49px;
+  overflow: hidden;
+  cursor: pointer;
+  border: #464646;
+  border-radius: 4px;
+  font-size: 18px;
+  text-decoration: none;
+  margin-left: 35px;
+  transition: 0.3s;
+}
+
+.header .language-select li {
+  display: block;
+  vertical-align: middle;
+  flex-direction: column;
+  justify-content: left;
+  order: 2;
+  min-height: 49px;
+}
+
+.header .language-select li:hover {
+  cursor: pointer;
+}
+
+.header .language-select li span {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.header .language-select .open {
+  height: 148px;
+}
+
+.header .language-select li.active {
+  order: 1;
+  pointer-events: none;
+}
