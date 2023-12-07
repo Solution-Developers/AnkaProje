@@ -325,7 +325,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
     align-items: center;
     backdrop-filter: blur(10px);
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    z-index: 100;
+    z-index: 1;
   
   }
   
@@ -360,7 +360,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
         display: block;
       }
       .navbar {
-        position: absolute;
+        position: fixed;
         top: 100%;
         left: 0;
         width: 100%;
@@ -383,10 +383,17 @@ input:focus, textarea:focus, keygen:focus, select:focus {
         background: rgba(255, 255, 255, 0.1);
         border-bottom: 2px solid rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(10px);
-        z-index: 99;
+        z-index: 1;
         display: none;
       }
       .nav-bg.active {
         display: block;
       }
     }
+
+  
+
+
+   
+	
+	
